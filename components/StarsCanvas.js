@@ -101,9 +101,10 @@ const StarsCanvas = ({ children }) => {
   const handleSize = () => setHeight(canvasHeightRef.current.offsetHeight);
 
   useEffect(() => {
+    handleSize();
     window.addEventListener("resize", handleSize);
     return () => window.removeEventListener("resize", handleSize);
-  }, [height, canvasHeightRef]);
+  });
 
   return (
     <div className="relative h-auto overflow-hidden">
@@ -111,7 +112,7 @@ const StarsCanvas = ({ children }) => {
 
       <div
         ref={canvasHeightRef}
-        className="absolute top-0 left-0 w-full h-auto bg-opacity-0 z-20"
+        className="absolute top-0 left-0 grid w-full h-auto bg-opacity-0 z-20"
       >
         {children}
       </div>

@@ -116,18 +116,37 @@ export default function Home() {
       {/* Stars Background */}
       <StarsCanvas>
         {/* About section */}
-        <section id="about" className="relative mt-4 h-auto bg-transparent text-white p-6">
+        <section
+          id="about"
+          className="relative mt-4 h-auto bg-transparent text-white p-6"
+        >
           <section title="me" className="flex items-center gap-2">
-            <div title="Arzaan khan" className="flex-shrink-0 w-40 h-40 md:w-44 md:h-44 bg-violet-600 rounded-full"></div>
+            <div
+              title="Arzaan khan"
+              className="flex-shrink-0 w-40 h-40 md:w-44 md:h-44 bg-violet-600 rounded-full"
+            ></div>
             <p className="text-5xl font-bold ">Arzaan khan</p>
           </section>
 
-          <div className="w-full bg-transparent pt-4">
-            <p className="h-56 w-full md:w-1/2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque neque justo, condimentum in dapibus at, pulvinar et ipsum. Donec sodales nec magna ut feugiat. Morbi facilisis hendrerit lobortis. Mauris imperdiet lectus bibendum hendrerit vehicula. Maecenas porttitor pulvinar magna, non fringilla tortor aliquet id. Quisque vitae tellus lacus. Suspendisse augue ipsum, eleifend a sagittis sed, tincidunt quis justo. Nam eros purus, pellentesque sed lobortis in, egestas sed dolor. Duis dignissim, urna id tincidunt eleifend, tellus ipsum pulvinar nisi, et pulvinar diam risus sed mauris. Donec viverra posuere nibh sed efficitur. Cras venenatis, eros quis semper facilisis, nisi orci convallis sem, quis ullamcorper dui mauris non risus. Mauris eget sapien nec turpis pretium tincidunt et id massa. Proin rhoncus maximus purus a dapibus. Nunc sed facilisis dolor.
+          <div className="w-full bg-transparent py-4">
+            <p className="w-full md:w-1/2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              neque justo, condimentum in dapibus at, pulvinar et ipsum. Donec
+              sodales nec magna ut feugiat. Morbi facilisis hendrerit lobortis.
+              Mauris imperdiet lectus bibendum hendrerit vehicula. Maecenas
+              porttitor pulvinar magna, non fringilla tortor aliquet id. Quisque
+              vitae tellus lacus. Suspendisse augue ipsum, eleifend a sagittis
+              sed, tincidunt quis justo. Nam eros purus, pellentesque sed
+              lobortis in, egestas sed dolor. Duis dignissim, urna id tincidunt
+              eleifend, tellus ipsum pulvinar nisi, et pulvinar diam risus sed
+              mauris. Donec viverra posuere nibh sed efficitur. Cras venenatis,
+              eros quis semper facilisis, nisi orci convallis sem, quis
+              ullamcorper dui mauris non risus. Mauris eget sapien nec turpis
+              pretium tincidunt et id massa. Proin rhoncus maximus purus a
+              dapibus. Nunc sed facilisis dolor.
             </p>
           </div>
-          <section title="technologies" className="flex ">
+          {/* <section title="technologies" className="flex ">
             {techs.map((item) => (
               <div
                 key={item.alt}
@@ -141,13 +160,13 @@ export default function Home() {
                 />
               </div>
             ))}
-          </section>
+          </section> */}
         </section>
 
         {/* Contact section */}
         <section
           id="contact"
-          className="flex flex-col md:flex-row justify-between w-full p-6 bg-opactiy-0 divide-y md:divide-y-0 md:divide-x text-white"
+          className="flex flex-col md:flex-row justify-between relative w-full p-6 bg-opactiy-0 divide-y md:divide-y-0 md:divide-x text-white"
         >
           <div className="w-1/2 pb-2">
             <h1 className="text-3xl font-semibold">
@@ -170,6 +189,11 @@ export default function Home() {
               type="email"
               className="w-full h-8 px-4 rounded-sm border border-cyan-500 bg-inherit"
               placeholder="Email"
+            />
+            <input
+              type="text"
+              className="w-full h-8 px-4 rounded-sm border border-cyan-500 bg-inherit"
+              placeholder="Subject"
             />
             <textarea className="w-full px-4 pt-2 rounded-sm border border-cyan-500 bg-inherit" />
             <button className="cursor-pointer w-full bg-gradient-to-r from-cyan-500 to-teal-500 h-8 font-semibold rounded-sm">

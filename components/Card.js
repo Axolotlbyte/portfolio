@@ -27,7 +27,7 @@ const Card = ({ backgroundImage, title, image }) => {
         className="relative w-full md:w-3/5 h-auto mx-auto"
         animateIn="animate__fadeInUp"
       >
-        <div className="shadow-lg shadow-black hover:shadow-pink-900 rounded-lg">
+        <div className="shadow-lg shadow-black hover:shadow-cyan-900 rounded-lg">
           <Image
             title={title}
             width={"1512"}
