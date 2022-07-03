@@ -39,19 +39,19 @@ export default function Home() {
     },
   ];
 
-  const techs = [
-    { src: "/technologies/javascript.svg", alt: "javascript" },
-    { src: "/technologies/python.svg", alt: "python" },
-    { src: "/technologies/react.svg", alt: "react" },
-    { src: "/technologies/next.svg", alt: "next" },
-    { src: "/technologies/nodejs.svg", alt: "nodejs" },
-    { src: "/technologies/expressjs.svg", alt: "express" },
-    { src: "/technologies/git.svg", alt: "git" },
-    { src: "/technologies/anaconda.svg", alt: "anaconda" },
-    { src: "/technologies/mongodb.svg", alt: "mongodb" },
-    { src: "/technologies/postgre.svg", alt: "postgreSQL" },
-    { src: "/technologies/tailwind.svg", alt: "tailwind" },
-  ];
+  // const techs = [
+  //   { src: "/technologies/javascript.svg", alt: "javascript" },
+  //   { src: "/technologies/python.svg", alt: "python" },
+  //   { src: "/technologies/react.svg", alt: "react" },
+  //   { src: "/technologies/next.svg", alt: "next" },
+  //   { src: "/technologies/nodejs.svg", alt: "nodejs" },
+  //   { src: "/technologies/expressjs.svg", alt: "express" },
+  //   { src: "/technologies/git.svg", alt: "git" },
+  //   { src: "/technologies/anaconda.svg", alt: "anaconda" },
+  //   { src: "/technologies/mongodb.svg", alt: "mongodb" },
+  //   { src: "/technologies/postgre.svg", alt: "postgreSQL" },
+  //   { src: "/technologies/tailwind.svg", alt: "tailwind" },
+  // ];
 
   return (
     <Layout title={"axolotlbyte - Arzaan khan's Portfolio"}>
@@ -72,6 +72,7 @@ export default function Home() {
           loop
           muted
           disablePictureInPicture
+          poster={"/videos/poster.webp"}
         >
           <source
             src={"/videos/axolotlbyte-compressed.webm"}
@@ -93,8 +94,8 @@ export default function Home() {
             />
           </h1>
           <br />
-          <p className="text-lg">
-            I&apos;m Arzaan, blah blah blah lorem ipsum dolor si amet.
+          <p className="text-lg px-2 h-auto">
+            I&apos;m Arzaan, a software developer and digital experience designer
           </p>
         </div>
         <section></section>
