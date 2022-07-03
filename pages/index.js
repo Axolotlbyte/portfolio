@@ -24,17 +24,17 @@ export default function Home() {
   const work = [
     {
       title: "Apollo - Stock Forecast App",
-      image: "/work/site-apollo.svg",
+      image: "/work/site-apollo.webp",
       backgroundImage: "/work/galaxy-texture.webp",
     },
     {
       title: "Titanium - Blog",
-      image: "/work/site-titanium.svg",
+      image: "/work/site-titanium.webp",
       backgroundImage: "/work/blog-texture.webp",
     },
     {
       title: "Your Dentist - Dental health service",
-      image: "/work/site-dentist.svg",
+      image: "/work/site-dentist.webp",
       backgroundImage: "/work/dentist-texture.webp",
     },
   ];
