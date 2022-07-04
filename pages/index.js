@@ -1,7 +1,12 @@
+import dynamic from "next/dynamic";
 import Card from "../components/Card";
-import Layout from "../components/Layout";
-import Typewriter from "typewriter-effect";
-import Image from "next/image";
+// import Layout from "../components/Layout";
+// import Typewriter from "typewriter-effect";
+const Layout = dynamic(() => import("../components/Layout"));
+const Typewriter = dynamic(() => import("typewriter-effect"));
+// const NavList = dynamic(() => import("../components/NavList"))
+// const StarsCanvas = dynamic(() => import("../components/StarsCanvas"))
+// import Image from "next/image";
 // import { useRef, useState, useEffect } from "react";
 import StarsCanvas from "../components/StarsCanvas";
 import NavList from "../components/NavList";
@@ -95,7 +100,7 @@ export default function Home() {
           </h1>
           <br />
           <p className="text-lg px-2 h-auto">
-            I&apos;m Arzaan, a software developer and digital experience designer
+            I&apos;m Arzaan, I am a software developer and a digital experience designer
           </p>
         </div>
         <section></section>
