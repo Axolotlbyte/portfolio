@@ -174,7 +174,7 @@ export default function Home() {
           id="contact"
           className="flex flex-col md:flex-row justify-between relative w-full p-6 bg-opactiy-0 divide-y md:divide-y-0 md:divide-x text-white"
         >
-          <div className="w-1/2 pb-2">
+          <div className="w-full md:w-1/2 pb-2">
             <h1 className="text-3xl font-semibold">
               Let&apos;s Connect & Build Something Together!{" "}
             </h1>
