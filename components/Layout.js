@@ -59,8 +59,8 @@ export default function Layout({ children, title }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className="w-auto h-auto z-20 text-teal-500 absolute top-6 left-6 text-3xl md:text-5xl font-bold">
-        axolotlbyte
+      <header className="w-auto h-auto z-20 absolute top-6 left-6 text-3xl md:text-5xl font-bold">
+        <span className="text-cyan-500">axolotl</span><span className="text-pink-500">byte</span>
       </header>
 
       <main>{children}</main>

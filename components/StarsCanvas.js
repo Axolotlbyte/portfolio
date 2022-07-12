@@ -107,19 +107,24 @@ const StarsCanvas = ({ children }) => {
   });
 
   return (
-    <div className="relative h-auto overflow-hidden">
-      <canvas height={height} id="stars" ref={canvasRef} />
+    <div className="relative w-full h-auto overflow-hidden">
+      <canvas  id="stars" ref={canvasRef} />
 
       <div
         ref={canvasHeightRef}
-        className="absolute top-0 left-0 grid w-full h-auto bg-opacity-0 z-20"
+        className=" top-0 left-0 grid w-full h-auto bg-opacity-0 "
       >
         {children}
       </div>
 
       <style jsx>{`
         #stars {
-          z-index: 1;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          pointer-events: none;
         }
       `}</style>
     </div>

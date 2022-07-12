@@ -10,6 +10,7 @@ const Typewriter = dynamic(() => import("typewriter-effect"));
 // import { useRef, useState, useEffect } from "react";
 import StarsCanvas from "../components/StarsCanvas";
 import NavList from "../components/NavList";
+import ServiceCard from "../components/ServiceCard";
 
 export default function Home() {
   // const [canvasHeight, setCanvasHeight] = useState(0);
@@ -31,16 +32,25 @@ export default function Home() {
       title: "Apollo - Stock Forecast App",
       image: "/work/site-apollo.webp",
       backgroundImage: "/work/galaxy-texture.webp",
+      heading: "Highly Efficient Code And Functional Design",
+      description:
+        "Optimised code that provides best performance to the user and is built upto the modern standards to increase User satisfaction ",
     },
     {
       title: "Titanium - Blog",
       image: "/work/site-titanium.webp",
       backgroundImage: "/work/blog-texture.webp",
+      heading: "Beautiful Design Paired With Best SEO Practices",
+      description:
+        "Search engine optimisation practices that set you apart from 70% of the businesses out there. Get a site that is Optimised to rank better on the web.",
     },
     {
       title: "Your Dentist - Dental health service",
       image: "/work/site-dentist.webp",
       backgroundImage: "/work/dentist-texture.webp",
+      heading: "Elegant User Experience inspired By Modern Design",
+      description:
+        "Stylish Designs that enhance User Experience and add a look of professionalism to the product.",
     },
   ];
 
@@ -57,6 +67,24 @@ export default function Home() {
   //   { src: "/technologies/postgre.svg", alt: "postgreSQL" },
   //   { src: "/technologies/tailwind.svg", alt: "tailwind" },
   // ];
+
+  const services = [
+    {
+      title: "Portfolio website",
+      icon: "/work/portfolio.svg",
+      description: "lorem ipsum dolor si amet",
+    },
+    {
+      title: "Blog website",
+      icon: "/work/blog.svg",
+      description: "lorem ipsum dolor si amet",
+    },
+    {
+      title: "Business website",
+      icon: "/work/shop.svg",
+      description: "lorem ipsum dolor si amet",
+    },
+  ];
 
   return (
     <Layout title={"axolotlbyte - Arzaan khan's Portfolio"}>
@@ -100,7 +128,11 @@ export default function Home() {
           </h1>
           <br />
           <p className="text-lg px-2 h-auto">
-            I&apos;m Arzaan, I am a software developer and a digital experience designer
+            I&apos;m Arzaan, I am a software developer and a digital experience
+            designer.
+            <br /> Weclome to{" "}
+            <span className="text-cyan-500 font-semibold">axolotl</span>
+            <span className="text-pink-500 font-semibold">byte</span>!
           </p>
         </div>
         <section></section>
@@ -108,15 +140,35 @@ export default function Home() {
 
       {/* Work section */}
       <section id="work">
+        {/* Promotional Cards */}
         <div className="w-full grid mx-auto md:w-full h-auto relative text-white">
           {work.map((item) => (
             <Card
               key={item.title}
               backgroundImage={item.backgroundImage}
               image={item.image}
+              heading={item.heading}
+              description={item.description}
             />
           ))}
         </div>
+        {/* Services */}
+        <section
+          style={{ backgroundImage: `url("/work/service-texture.webp")` }}
+          className="h-auto w-full bg-fixed bg-cover"
+        >
+          <h1 className="text-4xl text-center w-full underline underline-offset-8 py-2 font-bold text-cyan-500">SERVICES</h1>
+          <div className="w-full h-auto flex flex-col md:flex-row items-center justify-center gap-6 p-6">
+            {services.map((service) => (
+              <ServiceCard
+                key={service.title}
+                title={service.title}
+                description={service.description}
+                icon={service.icon}
+              />
+            ))}
+          </div>
+        </section>
       </section>
 
       {/* Stars Background */}
@@ -179,11 +231,21 @@ export default function Home() {
               Let&apos;s Connect & Build Something Together!{" "}
             </h1>
             <p className="text-lg pt-2 pr-2 text-gray-400">
-              Lorem ipsum dolor si amet. Du dora Hola soy amoy di vor bonjour
-              bonseuis hola amirv faskiet dlare
+              I am always excited to build something new. Let&apos; connect and
+              we can bring your ideas to reality!
+              <br />
+              <span className="pt-4">
+                email:{" "}
+                <a
+                  className="underline text-cyan-500"
+                  href="mailto:arzaan@axolotlbyte.com"
+                >
+                  arzaan@axolotlbyte.com
+                </a>
+              </span>
             </p>
           </div>
-          <div className="grid gap-2 w-full md:w-1/2 md:px-6 pb-2">
+          <div className="grid gap-2 w-full md:w-1/2 md:px-6 py-2">
             <h1 className="text-3xl font-semibold text-cyan-500">Contact</h1>
 
             <input
@@ -201,7 +263,10 @@ export default function Home() {
               className="w-full h-8 px-4 rounded-sm border border-cyan-500 bg-inherit"
               placeholder="Subject"
             />
-            <textarea className="w-full px-4 pt-2 rounded-sm border border-cyan-500 bg-inherit" />
+            <textarea
+              placeholder="Describe your problem in breif..."
+              className="w-full px-4 pt-2 rounded-sm border border-cyan-500 bg-inherit"
+            />
             <button className="cursor-pointer w-full bg-gradient-to-r from-cyan-500 to-teal-500 h-8 font-semibold rounded-sm">
               Submit
             </button>
