@@ -157,7 +157,9 @@ export default function Home() {
           style={{ backgroundImage: `url("/work/service-texture.webp")` }}
           className="h-auto w-full bg-fixed bg-cover"
         >
-          <h1 className="text-4xl text-center w-full underline underline-offset-8 py-2 font-bold text-cyan-500">SERVICES</h1>
+          <h1 className="text-4xl text-center w-full underline underline-offset-8 py-2 font-bold text-cyan-500">
+            SERVICES
+          </h1>
           <div className="w-full h-auto flex flex-col md:flex-row items-center justify-center gap-6 p-6">
             {services.map((service) => (
               <ServiceCard
@@ -188,13 +190,19 @@ export default function Home() {
 
           <div className="w-full bg-transparent py-4">
             <p className="w-full md:w-1/2">
-              Born and Raised in India, He is currently pursuing a bachelor's degree in Computer Science. Specialising in software development with his Detail-Oriented designing techniques. 
-<br/>
-He has aquired a wide range of skills including leading technologies in development and excellent ability to grasp concepts and retain new information.
-<br/>
-His main skillset consists of - Javascript, Python, Sql, React, Nodejs, Express.
-<br/>
-When Arzaan isn't working hard at some project, you'll find him enjoying sketching and digital painting.
+              Born and Raised in India, He is currently pursuing a bachelor&apos;s
+              degree in Computer Science. Specialising in software development
+              with his Detail-Oriented designing techniques.
+              <br />
+              He has aquired a wide range of skills including leading
+              technologies in development and excellent ability to grasp
+              concepts and retain new information.
+              <br />
+              His main skillset consists of - Javascript, Python, Sql, React,
+              Nodejs, Express.
+              <br />
+              When Arzaan isn&apos;t working hard at some project, you&apos;ll find him
+              enjoying sketching and digital painting.
             </p>
           </div>
           {/* <section title="technologies" className="flex ">
