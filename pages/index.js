@@ -72,17 +72,20 @@ export default function Home() {
     {
       title: "Portfolio website",
       icon: "/work/portfolio.svg",
-      description: "lorem ipsum dolor si amet",
+      description:
+        "Get yourself a professional web portfolio designed with style.",
     },
     {
       title: "Blog website",
       icon: "/work/blog.svg",
-      description: "lorem ipsum dolor si amet",
+      description:
+        "Get a personal blog built according to your needs and designed to appeal to the masses.",
     },
     {
       title: "Business website",
       icon: "/work/shop.svg",
-      description: "lorem ipsum dolor si amet",
+      description:
+        "Get a business website made using scalable technology and best industry wide practices.",
     },
   ];
 
@@ -106,6 +109,7 @@ export default function Home() {
           muted
           disablePictureInPicture
           poster={"/videos/poster.webp"}
+          controls={false}
         >
           <source
             src={"/videos/axolotlbyte-compressed.webm"}
@@ -160,7 +164,7 @@ export default function Home() {
           <h1 className="text-4xl text-center w-full underline underline-offset-8 py-2 font-bold text-cyan-500">
             SERVICES
           </h1>
-          <div className="w-full h-auto flex flex-col md:flex-row items-center justify-center gap-6 p-6">
+          <div className="w-full h-auto flex flex-col items-stretch md:flex-row justify-center gap-6 p-6">
             {services.map((service) => (
               <ServiceCard
                 key={service.title}
@@ -190,21 +194,62 @@ export default function Home() {
 
           <div className="w-full bg-transparent py-4">
             <p className="w-full md:w-1/2">
-              Born and Raised in India, He is currently pursuing a bachelor&apos;s
-              degree in Computer Science. Specialising in software development
-              with his Detail-Oriented designing techniques.
-              <br />
+              Born and Raised in India, He is currently pursuing a
+              bachelor&apos;s degree in Computer Science. Specialising in
+              software development with his Detail-Oriented designing
+              techniques.
+              <br className="py-1 block" />
+              <br/>
               He has aquired a wide range of skills including leading
               technologies in development and excellent ability to grasp
               concepts and retain new information.
-              <br />
+              <br className="py-1 block" />
+              <br/>
               His main skillset consists of - Javascript, Python, Sql, React,
               Nodejs, Express.
-              <br />
-              When Arzaan isn&apos;t working hard at some project, you&apos;ll find him
-              enjoying sketching and digital painting.
+              <br className="py-1 block" />
+              <br/>
+              When Arzaan isn&apos;t working hard at some project, you&apos;ll
+              find him enjoying sketching and digital painting.
             </p>
           </div>
+          <section title="skillset" className="py-2 w-full md:w-1/2">
+            <h1 className="text-4xl font-semibold pb-2">Skillset</h1>
+
+              <div title="javascript" className="p-1 rounded-sm bg-black px-2 font-medium text-white w-min inline-block mr-2 mb-2">
+                Javascript
+              </div>
+              <div title="python" className="p-1 rounded-sm bg-black px-2 font-medium text-white w-min inline-block mr-2 mb-2">
+                Python
+              </div>
+              <div title="python" className="p-1 rounded-sm bg-black px-2 font-medium text-white w-min inline-block mr-2 mb-2">
+                SQL
+              </div>
+              <div title="react" className="p-1 rounded-sm bg-black px-2 font-medium text-white w-min inline-block mr-2 mb-2">
+                React.js
+              </div>
+              <div title="next.js" className="p-1 rounded-sm bg-black px-2 font-medium text-white w-min inline-block mr-2 mb-2">
+                Next.js
+              </div>
+              <div title="TailwindCSS" className="p-1 rounded-sm bg-black px-2 font-medium text-white w-min inline-block mr-2 mb-2">
+                TailwindCSS
+              </div>
+              <div title="Bootstrap" className="p-1 rounded-sm bg-black px-2 font-medium text-white w-min inline-block mr-2 mb-2">
+                Bootstrap
+              </div>
+              <div title="nodejs" className="p-1 rounded-sm bg-black px-2 font-medium text-white w-min inline-block mr-2 mb-2">
+                Nodejs
+              </div>
+              <div title="Expressjs" className="p-1 rounded-sm bg-black px-2 font-medium text-white w-min inline-block mr-2 mb-2">
+                Expressjs
+              </div>
+              <div title="PostgreSQL" className="p-1 rounded-sm bg-black px-2 font-medium text-white w-min inline-block mr-2 mb-2">
+                PostgreSQL
+              </div>
+              <div title="Mongodb" className="p-1 rounded-sm bg-black px-2 font-medium text-white w-min inline-block mr-2 mb-2">
+                MongoDB
+              </div>
+          </section>
           {/* <section title="technologies" className="flex ">
             {techs.map((item) => (
               <div
@@ -235,8 +280,23 @@ export default function Home() {
               I am always excited to build something new. Let&apos; connect and
               we can bring your ideas to reality!
               <br />
-              <span className="pt-4">
-                email:{" "}
+              <span className="pt-4 flex items-center justify-start gap-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1"
+                  strokeLinecap="round"
+                  strokelinejoin="round"
+                  className="feather feather-mail mt-1"
+                >
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>{" "}
+                :
                 <a
                   className="underline text-cyan-500"
                   href="mailto:arzaan@axolotlbyte.com"
@@ -251,22 +311,22 @@ export default function Home() {
 
             <input
               type="text"
-              className="w-full h-8 px-4 rounded-sm border border-cyan-500 bg-inherit"
+              className="w-full h-8 px-4 rounded-sm border border-cyan-500 bg-inherit focus:ring-1 ring-pink-500 outline-none focus:border-pink-500"
               placeholder="Full Name"
             />
             <input
               type="email"
-              className="w-full h-8 px-4 rounded-sm border border-cyan-500 bg-inherit"
+              className="w-full h-8 px-4 rounded-sm border border-cyan-500 bg-inherit focus:ring-1 ring-pink-500 outline-none focus:border-pink-500"
               placeholder="Email"
             />
             <input
               type="text"
-              className="w-full h-8 px-4 rounded-sm border border-cyan-500 bg-inherit"
+              className="w-full h-8 px-4 rounded-sm border border-cyan-500 bg-inherit focus:ring-1 ring-pink-500 outline-none focus:border-pink-500"
               placeholder="Subject"
             />
             <textarea
               placeholder="Describe your problem in breif..."
-              className="w-full px-4 pt-2 rounded-sm border border-cyan-500 bg-inherit"
+              className="w-full px-4 pt-2 rounded-sm border min-h-28 border-cyan-500 bg-inherit focus:ring-1 ring-pink-500 outline-none focus:border-pink-500"
             />
             <button className="cursor-pointer w-full bg-gradient-to-r from-cyan-500 to-teal-500 h-8 font-semibold rounded-sm">
               Submit
@@ -275,6 +335,9 @@ export default function Home() {
         </section>
       </StarsCanvas>
       <style jsx>{`
+        .min-h-28{
+          min-height: 7rem/* 112px */;
+        }
         #about-img {
           position: absolute;
           left: 0;

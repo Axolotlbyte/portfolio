@@ -60,7 +60,7 @@ export default function Layout({ children, title }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className="w-auto h-auto z-20 absolute top-6 left-6 select-none text-3xl md:text-5xl font-bold header-text overflow-visible">
+      <header className="w-auto h-auto z-20 pb-2 absolute top-6 left-6 select-none text-3xl md:text-5xl font-bold header-text overflow-visible">
         axolotlbyte
       </header>
 
