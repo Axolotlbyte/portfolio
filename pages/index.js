@@ -188,20 +188,13 @@ export default function Home() {
 
           <div className="w-full bg-transparent py-4">
             <p className="w-full md:w-1/2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-              neque justo, condimentum in dapibus at, pulvinar et ipsum. Donec
-              sodales nec magna ut feugiat. Morbi facilisis hendrerit lobortis.
-              Mauris imperdiet lectus bibendum hendrerit vehicula. Maecenas
-              porttitor pulvinar magna, non fringilla tortor aliquet id. Quisque
-              vitae tellus lacus. Suspendisse augue ipsum, eleifend a sagittis
-              sed, tincidunt quis justo. Nam eros purus, pellentesque sed
-              lobortis in, egestas sed dolor. Duis dignissim, urna id tincidunt
-              eleifend, tellus ipsum pulvinar nisi, et pulvinar diam risus sed
-              mauris. Donec viverra posuere nibh sed efficitur. Cras venenatis,
-              eros quis semper facilisis, nisi orci convallis sem, quis
-              ullamcorper dui mauris non risus. Mauris eget sapien nec turpis
-              pretium tincidunt et id massa. Proin rhoncus maximus purus a
-              dapibus. Nunc sed facilisis dolor.
+              Born and Raised in India, He is currently pursuing a bachelor's degree in Computer Science. Specialising in software development with his Detail-Oriented designing techniques. 
+<br/>
+He has aquired a wide range of skills including leading technologies in development and excellent ability to grasp concepts and retain new information.
+<br/>
+His main skillset consists of - Javascript, Python, Sql, React, Nodejs, Express.
+<br/>
+When Arzaan isn't working hard at some project, you'll find him enjoying sketching and digital painting.
             </p>
           </div>
           {/* <section title="technologies" className="flex ">
