@@ -21,8 +21,6 @@ const Contact = () => {
     });
   };
 
-  console.log({itsdis: process.env.NEXT_PUBLIC_TESTVR})
-
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
@@ -42,6 +40,7 @@ const Contact = () => {
       )
       .then(
         () => {
+          EMAILJS_PUBLIC_KEY;
           setLoading(false);
           alert("Thank you. I will get back to you as soon as possible.");
 
