@@ -13,7 +13,8 @@ const Card = ({ backgroundImage, title, image, heading, description }) => {
       </div>
       <AnimationOnScroll
         className="relative w-full md:w-3/5 h-auto mx-auto"
-        animateIn="animate__fadeInUp"
+        animateIn="animate__fadeInRight"
+        animateOnce
       >
         <div className="shadow-lg shadow-black hover:shadow-cyan-900 rounded-lg">
           <Image

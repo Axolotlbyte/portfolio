@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Navigation from "./navigation/Navigation";
 
 export default function Layout({ children, title }) {
   // Footer icons and links
@@ -52,9 +53,9 @@ export default function Layout({ children, title }) {
   ];
 
   return (
-    <div className="selection:bg-pink-500 selection:text-white">
+    <div className="selection:bg-pink-500 text-white selection:text-white">
       <Head>
-        <html lang="en" />
+        {/* <html lang="en" /> */}
         <title>{title}</title>
         <meta name="description" content="Welcome to axolotlbyte, Check out my Portfolio or Hire me for a web project. Click on the blue words to get started! " />
         <link rel="icon" href="/favicon.ico" />
@@ -64,9 +65,12 @@ export default function Layout({ children, title }) {
         axolotlbyte
       </header>
 
-      <main>{children}</main>
+      <main>
+        <Navigation/>
+        {children}
+      </main>
 
-      <footer className="w-full mx-auto h-11 flex items-center justify-between footer-anim">
+      <footer className="w-full mx-auto h-11 flex items-center justify-between bg-black">
         <span className="text-white text-xl font-semibold ml-4 flex">
           {iconLinks.map((item) => (
             <a
@@ -85,7 +89,7 @@ export default function Layout({ children, title }) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="text-white mr-4 flex items-center cursor-pointer">
+          <div className="text-white font-semibold mr-4 flex items-center cursor-pointer">
             <span>@axolotlbyte</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -97,16 +101,6 @@ export default function Layout({ children, title }) {
             </svg>
           </div>
         </a>
-        {/* <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <span className="">
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a> */}
       </footer>
       <style jsx>{`
         .footer-anim {

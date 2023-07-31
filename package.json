@@ -9,14 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-three/drei": "^9.80.0",
+    "@react-three/fiber": "^8.13.6",
     "animate.css": "^4.1.1",
     "axios": "^0.27.2",
+    "caniuse-lite": "^1.0.30001517",
+    "maath": "^0.7.0",
     "next": "12.1.6",
     "react": "18.2.0",
     "react-animation-on-scroll": "^5.1.0",
     "react-dom": "18.2.0",
+    "react-parallax-tilt": "^1.7.154",
     "react-responsive-carousel": "^3.2.23",
-    "typewriter-effect": "^2.18.2"
+    "react-vertical-timeline-component": "^3.6.0",
+    "three": "^0.155.0",
+    "typewriter-effect": "^2.20.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",

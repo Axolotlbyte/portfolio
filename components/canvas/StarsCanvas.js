@@ -93,7 +93,7 @@ const StarsCanvas = ({ children }) => {
     }
 
     window.onresize = function () {
-      starsParams.speed = stars.width > 640 ? 2 : 1;
+      starsParams.speed = stars.width > 640 ? 5 : 1;
       setupStars();
     };
   });
