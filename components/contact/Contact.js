@@ -2,6 +2,7 @@ import { useState } from "react";
 import { AnimationOnScroll } from "react-animation-on-scroll/dist/js/components";
 import SectionWrapper from "../SectionWrapper";
 import EarthCanvas from "../canvas/EarthCanvas";
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [loading, setLoading] = useState(false);
@@ -27,20 +28,20 @@ const Contact = () => {
 
     emailjs
       .send(
-        process.env.EMAILJS_SERVICE_ID,
-        process.env.EMAILJS_TEMPLATE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
           to_name: "arjaankhan",
           from_email: form.email,
           to_email: "arjaankhan@gmail.com",
-          message: form.message,
+          message: `${form.message}. Sent by ${form.email}.`,
         },
-        process.env.EMAILJS_PUBLIC_KEY
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {
-          EMAILJS_PUBLIC_KEY;
+          // NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
           setLoading(false);
           alert("Thank you. I will get back to you as soon as possible.");
 
