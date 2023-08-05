@@ -20,7 +20,7 @@ const About = () => {
           to create remarkable digital experiences that resonate with users.
           <br className="py-1 block" />
           <br />
-          Let's embark on a journey together to transform ideas into impactful
+          Let&apos;s embark on a journey together to transform ideas into impactful
           realities. Specialising in software development with his
           Detail-Oriented designing techniques.
           {/* <br className="py-1 block" />
