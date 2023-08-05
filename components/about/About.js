@@ -7,22 +7,26 @@ const About = () => {
     <SectionWrapper id={"about"} title={"About me"} subtitle={"Who I am"}>
       <div className="w-full bg-transparent py-4">
         <p className="w-full md:w-1/2">
-          Born and Raised in India, He is currently pursuing a bachelor&apos;s
-          degree in Computer Science. Specialising in software development with
-          his Detail-Oriented designing techniques.
+          I am a B.Tech graduate in Computer Science, specializing in crafting
+          captivating digital experiences. Proficient in JavaScript, Python, and
+          React.js, I create applications that deliver exceptional user
+          interactions. My portfolio reflects a commitment to innovation,
+          seamless solutions, and effective problem-solving.
           <br className="py-1 block" />
           <br />
-          He has aquired a wide range of skills including leading technologies
-          in development and excellent ability to grasp concepts and retain new
-          information.
+          I am dedicated to continuous learning, adapting to industry trends,
+          and collaborating closely with clients to bring their visions to life.
+          With a passion for pushing boundaries and an eye for detail, I strive
+          to create remarkable digital experiences that resonate with users.
           <br className="py-1 block" />
           <br />
-          His main skillset consists of - Javascript, Python, Sql, React,
-          Nodejs, Express.
-          <br className="py-1 block" />
+          Let's embark on a journey together to transform ideas into impactful
+          realities. Specialising in software development with his
+          Detail-Oriented designing techniques.
+          {/* <br className="py-1 block" />
           <br />
           When Arzaan isn&apos;t working hard at some project, you&apos;ll find
-          him enjoying sketching and digital painting.
+          him enjoying sketching and digital painting. */}
         </p>
       </div>
       <Skillset skills={skills} />
