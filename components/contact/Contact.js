@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { AnimationOnScroll } from "react-animation-on-scroll/dist/js/components";
 import SectionWrapper from "../SectionWrapper";
-import EarthCanvas from "../canvas/EarthCanvas";
+// import EarthCanvas from "../canvas/EarthCanvas";
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
@@ -128,7 +128,7 @@ const Contact = () => {
         animateIn="animate__fadeInRight"
         animateOnce
       >
-        <EarthCanvas />
+        {/* <EarthCanvas /> */}
       </AnimationOnScroll>
     </div>
   );

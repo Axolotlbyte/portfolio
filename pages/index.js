@@ -4,11 +4,13 @@ import Card from "../components/Card";
 // import Typewriter from "typewriter-effect";
 const Layout = dynamic(() => import("../components/Layout"));
 // const NavList = dynamic(() => import("../components/NavList"))
-// const StarsCanvas = dynamic(() => import("../components/StarsCanvas"))
+// const Work = dynamic(() => import("../components/work/Work"))
+const StarsCanvas = dynamic(() => import("../components/canvas/StarsCanvas"));
+// const Hero = dynamic(() => )
 // import Image from "next/image";
 // import { useRef, useState, useEffect } from "react";
 import Hero from "../components/Hero";
-import StarsCanvas from "../components/canvas/StarsCanvas";
+// import StarsCanvas from "../components/canvas/StarsCanvas";
 import Work from "../components/work/Work";
 import About from "../components/about/About";
 import Projects from "../components/projects/Projects";
