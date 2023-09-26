@@ -16,6 +16,7 @@ const Card = ({ title, img, description, using, github, live }) => {
           href={live}
           target="_blank"
           className="relative w-full lg:w-2/5 flex-shrink-0"
+          rel="noreferrer"
         >
           <div className="relative w-full">
             <Image
@@ -32,7 +33,7 @@ const Card = ({ title, img, description, using, github, live }) => {
         </a>
 
         <div className="h-full">
-          <a href={github} target="_blank">
+          <a href={github} target="_blank" rel="noreferrer">
             <h1 className="text-3xl font-semibold hover:text-cyan-500 hover:underline">
               {title}
             </h1>
@@ -43,7 +44,7 @@ const Card = ({ title, img, description, using, github, live }) => {
         </div>
 
         <div className="absolute lg:top-0 lg:right-0 top-2 right-2 flex items-center gap-3">
-          <a href={github} target="_blank">
+          <a href={github} target="_blank" rel="noreferrer">
             <button className="p-2 bg-black bg-opacity-30 rounded-full">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -55,7 +56,7 @@ const Card = ({ title, img, description, using, github, live }) => {
               </svg>
             </button>
           </a>
-          <a href={live} target="_blank">
+          <a href={live} target="_blank" rel="noreferrer">
             <button className="px-2 bg-red-500 rounded-md font-extrabold">
               LIVE
             </button>
