@@ -95,7 +95,7 @@ export default function Home() {
       {/* About section */}
       <About />
       {/* Work & Education*/}
-      <Work />
+      {/* <Work /> */}
 
       <Projects />
 

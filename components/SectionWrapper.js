@@ -6,7 +6,7 @@ const SectionWrapper = ({ id, subtitle, title, children, img, extraStyles }) => 
       style={{ backgroundImage: `url(${img})` }}
     >
       <p className="text-lg lg:text-xl font-light">{subtitle}</p>
-      <h1 className="text-4xl lg:text-6xl font-bold">{title}</h1>
+      <h1 className="text-5xl lg:text-6xl font-bold pb-1">{title}</h1>
       {children}
     </section>
   );

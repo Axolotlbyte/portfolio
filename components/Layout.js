@@ -17,7 +17,7 @@ export default function Layout({ children, title }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className="w-auto h-auto z-20 pb-2 absolute top-20 left-6 select-none text-3xl md:text-5xl font-bold header-text overflow-visible">
+      <header className="w-auto h-auto z-20 pb-2 absolute justify-between top-20 left-10 select-none text-3xl md:text-5xl font-bold header-text overflow-visible">
         axolotlbyte
       </header>
 
@@ -35,7 +35,12 @@ export default function Layout({ children, title }) {
       </div>
 
       <main>
-        <Navigation />
+        {/* <Navigation /> */}
+        <div className="absolute top-20 right-10 z-20 py-6 flex gap-8 text-xl font-semibold">
+          <button className="hover:text-pink-500">About</button>
+          <button className="hover:text-pink-500">Projects</button>
+          <button className="hover:text-pink-500">Contact</button>
+        </div>
         {children}
         <Analytics />
       </main>

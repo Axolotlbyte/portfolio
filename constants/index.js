@@ -112,10 +112,11 @@ export const experienceList = [
 
 export const projectList = [
   {
-    id: 0,
+    id: 1,
     title: "Blog - Titanium",
     img: "/assets/projects/site-titanium.webp",
-    descrition: "",
+    descrition:
+      "A professionally crafted, responsive blog app prioritizes user experience, accessibility, and engagement. It features an intuitive interface, multi-platform compatibility, social interaction, personalization, and robust security. Performance optimization and SEO-friendliness enhance speed and visibility, while analytics tools empower content refinement. This comprehensive approach ensures a successful blogging platform with a focus on user satisfaction and performance.",
     using: [
       "Javascript",
       "React.js",
@@ -125,12 +126,15 @@ export const projectList = [
       "TailwindCSS",
       "MongoDB",
     ],
+    live: "https://titanium-blond.vercel.app/",
+    github: "https://github.com/Axolotlbyte/Titanium",
   },
   {
     id: 2,
     title: "Stock Forecast App - Apollo",
     img: "/assets/projects/site-apollo.webp",
-    descrition: "",
+    descrition:
+      "A Python-based stock forecast app, powered by Facebook Prophet and designed using Streamlit for responsiveness, delivers accurate stock predictions in a user-friendly interface. Users input stock data to generate insightful forecasts, making it a valuable tool for investors.",
     using: [
       "Python",
       "Conda",
@@ -140,12 +144,15 @@ export const projectList = [
       "Plot.ly",
       "Yahoo-finance",
     ],
+    github: "https://github.com/Axolotlbyte/stock-prediction-app",
+    live: "https://github.com/Axolotlbyte/stock-prediction-app"
   },
   {
     id: 3,
     title: "Dentist Website",
     img: "/assets/projects/site-dentist.webp",
-    descrition: "",
+    descrition:
+      "A React-based dentist web app streamlines patient management with appointment forms and a work history section. Patients are kept informed through promotional content, while strong SEO ensures online visibility. Responsive design ensures a seamless user experience across devices. This app offers dental professionals an efficient tool for practice management and patient engagement.",
     using: [
       "Javascript",
       "React.js",
@@ -156,6 +163,64 @@ export const projectList = [
       "MongoDB",
       "Nodemailer",
     ],
+    live: "https://your-dentist.vercel.app/",
+    github: "https://github.com/Axolotlbyte/your-dentist",
+  },
+  {
+    id: 4,
+    title: "Icecream Website",
+    img: "/assets/projects/site-titanium.webp",
+    descrition:
+      "A professionally crafted, responsive blog app prioritizes user experience, accessibility, and engagement. It features an intuitive interface, multi-platform compatibility, social interaction, personalization, and robust security. Performance optimization and SEO-friendliness enhance speed and visibility, while analytics tools empower content refinement. This comprehensive approach ensures a successful blogging platform with a focus on user satisfaction and performance.",
+    using: ["Javascript", "React.js", "Node.js", "CSS", "HTML"],
+    live: "https://axolotlbyte.github.io/shopping-cart/#/",
+    github: "https://github.com/Axolotlbyte/shopping-cart",
+  },
+  {
+    id: 5,
+    title: "Book Store - No Go",
+    img: "/assets/projects/site-dentist.webp",
+    descrition:
+      "A React-based dentist web app streamlines patient management with appointment forms and a work history section. Patients are kept informed through promotional content, while strong SEO ensures online visibility. Responsive design ensures a seamless user experience across devices. This app offers dental professionals an efficient tool for practice management and patient engagement.",
+    using: [
+      "Javascript",
+      "React.js",
+      "Next.js",
+      "Node.js",
+      "Express.js",
+      "TailwindCSS",
+      "MongoDB",
+      "Nodemailer",
+    ],
+    github: "",
+    live: "https://axolotlbyte.github.io/book-shopping-page/#/",
+  },
+  {
+    id: 6,
+    title: "Memory Card Game",
+    img: "/assets/projects/site-dentist.webp",
+    descrition:
+      "A React-based dentist web app streamlines patient management with appointment forms and a work history section. Patients are kept informed through promotional content, while strong SEO ensures online visibility. Responsive design ensures a seamless user experience across devices. This app offers dental professionals an efficient tool for practice management and patient engagement.",
+    using: ["Javascript", "Webpack", "React", "HTML", "CSS"],
+    github: "https://github.com/Axolotlbyte/Memory-Card/tree/master",
+    live: "https://axolotlbyte.github.io/Memory-Card/",
+  },
+  {
+    id: 7,
+    title: "Old Portfolio Website",
+    img: "/assets/projects/site-dentist.webp",
+    descrition:
+      "A React-based dentist web app streamlines patient management with appointment forms and a work history section. Patients are kept informed through promotional content, while strong SEO ensures online visibility. Responsive design ensures a seamless user experience across devices. This app offers dental professionals an efficient tool for practice management and patient engagement.",
+    using: [
+      "Javascript",
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "TailwindCSS",
+      "Nodemailer",
+    ],
+    github: "",
+    live: "https://axolotlbyte.github.io/book-shopping-page/#/",
   },
 ];
 

@@ -11,7 +11,7 @@ const Projects = () => {
       img={"/assets/backgrounds/purple-gradient.webp"}
       extraStyles={""}
     >
-      <div className="py-8 grid lg:grid-cols-3 gap-9">
+      <div className="w-full grid gap-9 backdrop-blur-lg">
         {projectList.map((project) => (
           <Card
             key={project.id}
@@ -19,6 +19,8 @@ const Projects = () => {
             img={project.img}
             description={project.descrition}
             using={project.using}
+            github={project.github}
+            live={project.live}
           />
         ))}
       </div>

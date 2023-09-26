@@ -17,7 +17,7 @@ const Skillset = ({ skills, card }) => {
         <div
           key={skill}
           title={skill}
-          className="p-1 rounded-sm bg-black px-2 font-medium text-white w-min inline-block mr-2 mb-2 whitespace-nowrap"
+          className="p-2 rounded-md bg-black px-3 font-medium text-white w-min inline-block mr-2 mb-2 whitespace-nowrap"
         >
           {skill}
         </div>
