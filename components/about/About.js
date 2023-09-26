@@ -20,13 +20,9 @@ const About = () => {
           detail.
           <br className="py-1 block" />
           <br />
-          Let's collaborate to turn your ideas into impactful realities. With my
-          expertise in software development and detail-oriented design, I'm here
+          Let&apos;s collaborate to turn your ideas into impactful realities. With my
+          expertise in software development and detail-oriented design, I&apos;m here
           to contribute to your projects with precision and creativity.
-          {/* <br className="py-1 block" />
-          <br />
-          When Arzaan isn&apos;t working hard at some project, you&apos;ll find
-          him enjoying sketching and digital painting. */}
         </p>
       </div>
       <Skillset skills={skills} />
