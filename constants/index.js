@@ -145,7 +145,7 @@ export const projectList = [
       "Yahoo-finance",
     ],
     github: "https://github.com/Axolotlbyte/stock-prediction-app",
-    live: "https://github.com/Axolotlbyte/stock-prediction-app"
+    live: "https://github.com/Axolotlbyte/stock-prediction-app",
   },
   {
     id: 3,
@@ -169,59 +169,39 @@ export const projectList = [
   {
     id: 4,
     title: "Icecream Website",
-    img: "/assets/projects/site-titanium.webp",
+    img: "/assets/projects/site-icecream.png",
     descrition:
-      "A professionally crafted, responsive blog app prioritizes user experience, accessibility, and engagement. It features an intuitive interface, multi-platform compatibility, social interaction, personalization, and robust security. Performance optimization and SEO-friendliness enhance speed and visibility, while analytics tools empower content refinement. This comprehensive approach ensures a successful blogging platform with a focus on user satisfaction and performance.",
+      "A React-based web application dedicated to ice cream enthusiasts, offering a delightful online ice cream experience. This website serves as a virtual ice cream parlor, providing visitors with a wide range of mouthwatering ice cream flavors and related content.",
     using: ["Javascript", "React.js", "Node.js", "CSS", "HTML"],
     live: "https://axolotlbyte.github.io/shopping-cart/#/",
     github: "https://github.com/Axolotlbyte/shopping-cart",
   },
   {
     id: 5,
-    title: "Book Store - No Go",
-    img: "/assets/projects/site-dentist.webp",
-    descrition:
-      "A React-based dentist web app streamlines patient management with appointment forms and a work history section. Patients are kept informed through promotional content, while strong SEO ensures online visibility. Responsive design ensures a seamless user experience across devices. This app offers dental professionals an efficient tool for practice management and patient engagement.",
-    using: [
-      "Javascript",
-      "React.js",
-      "Next.js",
-      "Node.js",
-      "Express.js",
-      "TailwindCSS",
-      "MongoDB",
-      "Nodemailer",
-    ],
-    github: "",
-    live: "https://axolotlbyte.github.io/book-shopping-page/#/",
-  },
-  {
-    id: 6,
     title: "Memory Card Game",
-    img: "/assets/projects/site-dentist.webp",
-    descrition:
-      "A React-based dentist web app streamlines patient management with appointment forms and a work history section. Patients are kept informed through promotional content, while strong SEO ensures online visibility. Responsive design ensures a seamless user experience across devices. This app offers dental professionals an efficient tool for practice management and patient engagement.",
+    img: "/assets/projects/site-memorycard.webp",
+    descrition: <p>Embark on an interdimensional adventure with our React-based Rick and Morty Memory Card Game! Dive into the wacky universe of Rick Sanchez and his grandson Morty as you challenge your memory and matching skills. Flip over cards featuring characters and items from the beloved animated series. <br/> <b>The objective</b>: find matching pairs while navigating multiverse chaos. With vibrant graphics, comical character art, and a challenging memory test, our game offers endless fun for fans. Immerse yourself in the quirky humor of Rick and Morty while boosting your memory. Flip cards, uncover matches, and embark on this 100-word journey through the multiverse!</p>,
     using: ["Javascript", "Webpack", "React", "HTML", "CSS"],
     github: "https://github.com/Axolotlbyte/Memory-Card/tree/master",
     live: "https://axolotlbyte.github.io/Memory-Card/",
   },
-  {
-    id: 7,
-    title: "Old Portfolio Website",
-    img: "/assets/projects/site-dentist.webp",
-    descrition:
-      "A React-based dentist web app streamlines patient management with appointment forms and a work history section. Patients are kept informed through promotional content, while strong SEO ensures online visibility. Responsive design ensures a seamless user experience across devices. This app offers dental professionals an efficient tool for practice management and patient engagement.",
-    using: [
-      "Javascript",
-      "React.js",
-      "Node.js",
-      "Express.js",
-      "TailwindCSS",
-      "Nodemailer",
-    ],
-    github: "",
-    live: "https://axolotlbyte.github.io/book-shopping-page/#/",
-  },
+  // {
+  //   id: 6,
+  //   title: "Old Portfolio Website",
+  //   img: "/assets/projects/site-dentist.webp",
+  //   descrition:
+  //     "A React-based dentist web app streamlines patient management with appointment forms and a work history section. Patients are kept informed through promotional content, while strong SEO ensures online visibility. Responsive design ensures a seamless user experience across devices. This app offers dental professionals an efficient tool for practice management and patient engagement.",
+  //   using: [
+  //     "Javascript",
+  //     "React.js",
+  //     "Node.js",
+  //     "Express.js",
+  //     "TailwindCSS",
+  //     "Nodemailer",
+  //   ],
+  //   github: "",
+  //   live: "https://axolotlbyte.github.io/book-shopping-page/#/",
+  // },
 ];
 
 export const iconLinks = [

@@ -11,14 +11,14 @@ const Card = ({ title, img, description, using, github, live }) => {
       animateOnce
     >
       {/* <Tilt> */}
-      <div className="w-full flex flex-col lg:flex-row gap-5 rounded-lg mt-10 hover:outline-red-500 backdrop-blur-lg">
+      <div className="w-full flex flex-col lg:flex-row gap-5 mt-10 hover:outline-red-500 backdrop-blur-lg">
         <a
           href={live}
           target="_blank"
-          className="relative w-full lg:w-2/5 flex-shrink-0"
+          className="relative w-full lg:w-2/5 flex-shrink-0 rounded-lg overflow-hidden"
           rel="noreferrer"
         >
-          <div className="relative w-full">
+          <div className="relative w-full bg-white">
             <Image
               title={title}
               width={"1512"}
@@ -34,7 +34,7 @@ const Card = ({ title, img, description, using, github, live }) => {
 
         <div className="h-full">
           <a href={github} target="_blank" rel="noreferrer">
-            <h1 className="text-3xl font-semibold hover:text-cyan-500 hover:underline">
+            <h1 className="text-3xl font-semibold hover:text-cyan-500 underline">
               {title}
             </h1>
           </a>
